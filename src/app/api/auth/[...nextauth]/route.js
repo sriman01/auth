@@ -44,10 +44,10 @@ export const authOptions = {
         }),
     ],
     callbacks: {
-           async signIn({user, account}){
+           async signIn({user, account, profile}){
             console.log(user);
             console.log(account);
-            return user;
+            return '/';
            }
     },
 

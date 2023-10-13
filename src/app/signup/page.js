@@ -6,8 +6,9 @@ import {FaApple, FaGithub} from 'react-icons/fa'
 import { FaSquareXTwitter } from 'react-icons/fa6'
 import {BsLinkedin, BsDiscord} from 'react-icons/bs'
 import { useRouter } from 'next/navigation'
+import { signIn } from 'next-auth/react'
 
-export default function SignIn() {
+export default function SignUp() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -85,7 +86,7 @@ export default function SignIn() {
                         <div className=' font-semibold text-slate-700'>Register Here ...</div>
                     </div>
                     <div className=' flex gap-3 mx-auto'>
-                        <div className=' flex items-center gap-1 py-1 px-2 rounded-lg text-slate-500 bg-white shadow-inner cursor-pointer'>
+                        <div onClick={() => signIn('google')} className=' flex items-center gap-1 py-1 px-2 rounded-lg text-slate-500 bg-white shadow-inner cursor-pointer'>
                             <div className=' text-lg'><FcGoogle /></div>
                             <div className=' text-xs font-semibold'>Register with Google</div>
                         </div>
