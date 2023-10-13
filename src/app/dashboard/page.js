@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar'
 
 export default function page() {
   return (
-    <div className='bg-white '>
-    <div className=' flex gap-8 '>
+    <div className='bg-white min-h-screen pt-6 '>
+    <div className=' flex flex-wrap gap-8 '>
       <Sidebar />
       <div className='mt-[2rem]'>
         <Navbar />

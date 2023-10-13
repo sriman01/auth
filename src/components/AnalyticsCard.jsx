@@ -5,7 +5,7 @@ import { RiArrowDropDownLine } from 'react-icons/ri'
 
 export default function AnalyticsCard() {
     return (
-        <div className=' flex flex-wrap gap-2 items-start bg-white w-[100%] text-black'>
+        <div className=' flex flex-wrap gap-2 items-start bg-white w-[100%]  text-black'>
 
             <div className=' flex flex-col w-[15rem]  p-3 gap-1 rounded-lg shadow-inner'>
                 <div className=' bg-green-500 inline-block w-[2rem] p-2 rounded-full'><Image src = '/revenue.png' width='400' height='400' /></div>
