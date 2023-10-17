@@ -26,17 +26,17 @@ export default function Barcharts() {
       {
         label: 'User',
         data: [null, 300, null, 600, null, 900, null, 300, null],
-        backgroundColor: 'green',
-        borderColor: 'black',
-        borderWidth: 1,
+        backgroundColor: '#98D89E',
+        borderWidth: 0,
+        borderRadius:3,
         barPercentage: 0.8
       },
       {
         label: 'Guest',
         data: [null, 200, null, 250, null, 500, null, 400, null],
-        backgroundColor: 'red',
-        borderColor: 'black',
-        borderWidth: 1,
+        backgroundColor: '#EE8484',
+        borderRadius:3,
+        
         barPercentage: 0.8
       }
     ]
@@ -58,7 +58,7 @@ export default function Barcharts() {
 
 
   return (
-    <div className='   bg-white shadow-inner rounded-lg w-[100%] text-black mt-1'>
+    <div className='   bg-white shadow-inner rounded-lg w-[100%] text-black mt-3'>
       <div className='flex justify-between px-[8%] items-center'>
         <div className=' flex flex-col gap-1  pt-5'>
           <div className=' text-xl font-semibold'>Activities</div>
@@ -75,10 +75,9 @@ export default function Barcharts() {
       </div>
 
 
-      <div className=' flex justify-center w-full h-[13rem]'>
+      <div className=' flex justify-center h-[13rem] 2xl:h-[16rem]'>
         <Bar
-          width={'600px'}
-          
+         width = {'600px'}
           data={data}
           options={options}
         >

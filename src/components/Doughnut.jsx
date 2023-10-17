@@ -10,7 +10,7 @@ export default function TopProducts() {
     datasets: [
       {
         data: [55, 31, 14], // Adjust the percentages as needed
-        backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+        backgroundColor: ['#98D89E', '#EE8484', '#F6DC7D'],
       },
     ],
   };
@@ -25,7 +25,7 @@ export default function TopProducts() {
   };
 
   return (
-    <div className=' flex flex-col justify-center bg-white shadow-inner rounded-lg text-black h-[13rem] mt-1 w-[100%]'>
+    <div className=' flex flex-col justify-center bg-white shadow-inner rounded-lg text-black h-[15rem] mt-1 w-[100%]'>
       <div className='flex items-center justify-between px-[10%] py-2'>
         <div className=' text-lg font-semibold'>Top Products</div>
         <div className='text-xs text-slate-400'>May-June 2023</div>
@@ -35,8 +35,8 @@ export default function TopProducts() {
           <Doughnut
             data={data}
             options={options}
-            width={120} // Set the width of the chart
-            height={120} // Set the height of the chart
+            width={130} // Set the width of the chart
+            height={130} // Set the height of the chart
           />
         </div>
         <div>

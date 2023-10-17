@@ -8,29 +8,29 @@ import { CgProfile } from 'react-icons/cg'
 
 export default function Sidebar() {
   return (
-    <div className=' bg-slate-100 text-black  w-[15%] my-auto ml-3'>
-          <div className='relative bg-blue-500 text-white w-[100%] h-[42rem] py-[3rem] px-4 rounded-lg'>
-            <div className=' text-3xl font-bold mb-[3rem]'>Board.</div>
-            <div className='flex flex-col gap-8 ml-2'>
+    <div className=' bg-slate-100 text-black  md:w-[90%] 2xl:w-[95%] h-[100%] my-auto ml-3 2xl-ml-6'>
+          <div className='relative bg-blue-500 text-white w-[100%] h-[100%] py-[3rem] px-4 rounded-lg 2xl:px-10 2xl:h-[100%]'>
+            <div className=' text-3xl 2xl:text-5xl font-bold mb-[3rem]'>Board.</div>
+            <div className='flex flex-col gap-6 2xl:gap-14 ml-2 text-lg 2xl:text-3xl'>
                 <div className='flex items-center gap-3 '>
-                   <div className='text-xl' ><AiOutlinePieChart /></div>
-                   <div className=' text-xl font-semibold'>Dashboard</div>
+                   <div className='' ><AiOutlinePieChart /></div>
+                   <div className='  font-semibold'>Dashboard</div>
                 </div>
                 <div className='flex items-center gap-3'>
-                   <div className='text-xl'><BsTags /></div>
-                   <div className=' text-xl'>Transaction</div>
+                   <div className=''><BsTags /></div>
+                   <div className=' '>Transaction</div>
                 </div>
                 <div className='flex items-center gap-3'>
-                   <div className='text-xl'><TbCalendarTime /></div>
-                   <div className=' text-xl'>Schedules</div>
+                   <div className=''><TbCalendarTime /></div>
+                   <div className=' '>Schedules</div>
                 </div>
                 <div className='flex items-center gap-3'>
-                   <div className='text-xl'><CgProfile /></div>
-                   <div className=' text-xl'>Users</div>
+                   <div className=''><CgProfile /></div>
+                   <div className=' '>Users</div>
                 </div>
                 <div className='flex items-center gap-3'>
-                   <div className='text-xl' ><AiOutlineSetting /></div>
-                   <div className=' text-xl'>Settings</div>
+                   <div className='' ><AiOutlineSetting /></div>
+                   <div className=' '>Settings</div>
                 </div>
             </div>
             <div className='absolute bottom-4'>

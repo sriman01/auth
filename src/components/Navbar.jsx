@@ -6,9 +6,9 @@ import { FaUserCircle} from 'react-icons/fa'
 
 export default function Navbar() {
   return (
-    <div className=' bg-slate-200 text-black w-[100%] shadow-inner mb-2'>
-        <div className=' flex justify-between  bg-white py-1'>
-            <div className=' text-lg font-bold'>Dashboard</div>
+    <div className='  text-black 2xl:py-6  mb-2'>
+        <div className=' flex justify-between 2xl:py-3 bg-white py-1 2xl:text-3xl'>
+            <div className=' text-lg font-bold 2xl:text-3xl'>Dashboard</div>
             <div className='flex items-center gap-3'>
                 <div className='relative flex items-center bg-white rounded-lg shadow-md '>
                     <input 
@@ -16,10 +16,10 @@ export default function Navbar() {
                      type='text' 
                      placeholder='Search...'
                      />
-                    <div className='absolute text-xl right-3'><AiOutlineSearch /></div>
+                    <div className='absolute text-xl right-3 2xl:text-3xl'><AiOutlineSearch /></div>
                 </div>
-                <div className=' text-2xl'><IoMdNotificationsOutline /></div>
-                <div className=' text-2xl'><FaUserCircle /></div>
+                <div className=' text-2xl 2xl:text-3xl'><IoMdNotificationsOutline /></div>
+                <div className=' text-2xl 2xl:text-3xl'><FaUserCircle /></div>
             </div>
         </div>
     </div>
