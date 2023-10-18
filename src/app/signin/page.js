@@ -11,6 +11,7 @@ import { signIn } from 'next-auth/react'
 
 
 export default function SignIn() {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
     const router = useRouter();
@@ -25,7 +26,7 @@ export default function SignIn() {
 
         try {
           const res =   await signIn('credentials', {
-                email, password, redirect:false
+                email, password, redirect:true
             })
 
             if(res.error){
